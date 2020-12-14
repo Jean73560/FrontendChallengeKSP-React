@@ -196,7 +196,7 @@ const CustomerListView = () => {
 
   const bodyEliminar=(
     <div className={classes.modal}>
-      <p>Estás seguro que deseas eliminar la empleado <b>{empleadoSeleccionada && empleadoSeleccionada.nombre}</b> ? </p>
+      <p>Estás seguro que deseas eliminar la empleado <b>{empleadoSeleccionada && empleadoSeleccionada.fullName}</b> ? </p>
       <div align="right">
         <Button color="secondary" onClick={()=>peticionDelete()} >Sí</Button>
         <Button onClick={()=>abrirCerrarModalEliminar()}>No</Button>
